@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fffef7;
+    background-color: #faf7f8;
     color: #4a3728;
     line-height: 1.6;
     padding: 20px;
@@ -31,7 +31,7 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
-    color: #8b5a2b;
+    color: #c88240;
     margin: 1rem 0 0.5rem;
 }
 
@@ -58,6 +58,9 @@ a:hover {
 
 
 header {
+    background:#fff3e0;
+    border-radius: 20px;
+    padding: 20px;
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -72,10 +75,10 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
     padding: 0.5rem 0;
-    background-color: #f9ede3;
+    background-color: #f8a883f9;
     border-radius: 40px;
 }
 
@@ -86,8 +89,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #e6cbb8;
-    border-radius: 30px;
+    background-color: #f3c09b;
+    border-radius: 20px;
     text-decoration: none;
 }
 
@@ -98,14 +101,22 @@ hr {
     margin: 1rem 0;
 }
 
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 30px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
 
 section {
-    background: white;
+    background:#fff3e0;
     border-radius: 24px;
     padding: 1.5rem;
     margin-bottom: 2rem;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    transition: transform 0.2s;
+    transition: transform 0.4s;
 }
 
 section:hover {
@@ -121,6 +132,16 @@ img {
 
 }
 
+section:has(article) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+section:has(article) h2,
+section:has(article) p:first-of-type {
+    width:80%;
+}
 
 article {
     background: #fffaf5;
@@ -132,7 +153,6 @@ article {
 }
 
 article:hover {
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     transform: scale(1.02);
 }
 
@@ -145,55 +165,14 @@ article p {
     margin-bottom: 0.5rem;
 }
 
-
-
-section:has(article) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-
-section:has(article) h2,
-section:has(article) p:first-of-type {
-    width: 100%;
+article strong {
+  color: #c45c3a;
+  font-size: 1.1rem;
 }
 
 article {
     flex: 1 1 220px;
 }
-
-section:nth-of-type(2) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-section:nth-of-type(2) h2,
-section:nth-of-type(2) > p {
-    width: 100%;
-}
-
-
-section:nth-of-type(3) {
-    background: #ffe8da;
-    border-left: 8px solid #e6a17a;
-}
-
-section:nth-of-type(3) h2 {
-    border-left: none;
-    padding-left: 0;
-    color: #c0602c;
-}
-
-section:nth-of-type(3) ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-section:nth-of-type(3) li {
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
-}
-
 
 blockquote {
     background: #fef2e6;
@@ -209,7 +188,6 @@ blockquote footer {
     color: #a97c5c;
     font-weight: bold;
 }
-
 
 footer {
     background-color: #f9ede3;
@@ -235,6 +213,64 @@ footer a {
     color: #b45f3b;
 }
 
+form {
+    background: #fef7ef;
+    padding: 25px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e6c8a7;
+    border-radius: 12px;
+    font-family: inherit;
+    background: white;
+    font-size: 1rem;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #c45c3a;
+    box-shadow: 0 0 0 2px rgba(196,92,58,0.2);
+}
+
+fieldset {
+    border: 1px solid #e6c8a7;
+    border-radius: 16px;
+    padding: 12px 20px;
+    margin: 10px 0;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+input[type="submit"], input[type="reset"] {
+    width: auto;
+    background-color: #c45c3a;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    margin-right: 12px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #9b4b2e;
+}
 
 @media (max-width: 768px) {
     body {
@@ -258,7 +294,16 @@ footer a {
     .product-grid {
         flex-direction: column;
     }
+
+    form {
+        padding: 1rem;
+    }
+    button, input[type="submit"], input[type="reset"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
+
 
 @media (max-width: 480px) {
     nav ul {
@@ -271,7 +316,6 @@ footer a {
         padding: 0.3rem 1rem;
     }
 }
-
 
 .text-center {
     text-align: center;
@@ -288,19 +332,5 @@ footer a {
 
 .btn:hover {
     background-color: #c47a4f;
-    text-decoration: none;
-}
-
-
-section p strong a {
-    display: inline-block;
-    background-color: #c47a4f;
-    color: white;
-    padding: 8px 20px;
-    border-radius: 30px;
-    margin-top: 10px;
-}
-section p strong a:hover {
-    background-color: #a55c33;
     text-decoration: none;
 }
