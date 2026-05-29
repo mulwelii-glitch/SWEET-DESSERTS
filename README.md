@@ -75,7 +75,7 @@ Sweet Desserts Website Sitemap
 - Navigation bar background updated to improve contrast
 - Section cards now have subtle shadow and lift‑on‑hover effects
 - Improved readability on smaller screens
-- improve image optimisation and changed width and height of banner in homepage
+- improve image optimisation and changed width and height of firts image on  products page
 
 ## References
 
