@@ -72,18 +72,18 @@ HOME PAGE
 ![Sweet Desserts Homepage](screenshots/screenshot-home.png)
 
 ABOUT PAGE
-![Sweet Desserts Aboutpage](screenshots/Screenshot-about.png)
+![Sweet Desserts Aboutpage](screenshot-about.png)
 
 PRODUCT PAGE
-![Sweet Desserts Productpage](screenshots/Screenshot-products.png)
-![Sweet Desserts Productpage](screenshots/Screenshot-product2.png)
+![Sweet Desserts Productpage](screenshot-products.png)
+![Sweet Desserts Productpage](screenshot-product2.png)
 
 CONTACT PAGE
-![Sweet Desserts Contactpage](screenshots/Screenshot-contact.png)
-![Sweet Desserts Contactpage](screenshots/Screenshot-contacts2.png)
+![Sweet Desserts Contactpage](sreenshot-contact.png)
+![Sweet Desserts Contactpage](screenshot-contacts2.png)
 
 ENQUIRY PAGE
-![Sweet Desserts Enquirypage](screenshots/Screenshot-enquiry.png)
+![Sweet Desserts Enquirypage](screenshot-enquiry.png)
 
 
 ## Changelog
