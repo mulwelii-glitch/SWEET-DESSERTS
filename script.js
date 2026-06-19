@@ -205,11 +205,73 @@
             }
         });
     }
+    
+function initLightbox() {
+    const productSection = document.querySelector('section[id="products"], section:has(article)');
+    if (!productSection) return;
 
-    document.addEventListener('DOMContentLoaded', () => {
+    const images = Array.from(productSection.querySelectorAll('article img'));
+    if (images.length === 0) return;
+
+    const overlay = document.getElementById('lightbox-overlay');
+    const lightboxImg = document.getElementById('lightbox-image');
+    const closeBtn = document.getElementById('lightbox-close');
+    const prevBtn = document.getElementById('lightbox-prev');
+    const nextBtn = document.getElementById('lightbox-next');
+
+    let currentIndex = 0;
+
+    function openLightbox(index) {
+        if (index < 0) index = images.length - 1;
+        if (index >= images.length) index = 0;
+        currentIndex = index;
+        lightboxImg.src = images[currentIndex].src;
+        lightboxImg.alt = images[currentIndex].alt || 'Dessert image';
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden'; // prevent scrolling
+    }
+
+    function closeLightbox() {
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    images.forEach((img, index) => {
+        img.addEventListener('click', function(e) {
+            e.stopPropagation();
+            openLightbox(index);
+        });
+    });
+
+    closeBtn.addEventListener('click', closeLightbox);
+
+    overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) closeLightbox();
+    });
+
+    prevBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        openLightbox(currentIndex - 1);
+    });
+    nextBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        openLightbox(currentIndex + 1);
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (!overlay.classList.contains('active')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') openLightbox(currentIndex - 1);
+        if (e.key === 'ArrowRight') openLightbox(currentIndex + 1);
+    });
+}
+
+    document.addEventListener('DOMContentLoaded', function() {
         initProductFilter();
         initCartSimulator();
         initFormValidation();
         initStickyOffer();
+        initLightbox();
+
     });
 })();
