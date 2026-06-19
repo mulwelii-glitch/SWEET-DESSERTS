@@ -79,7 +79,7 @@ PRODUCT PAGE
 ![Sweet Desserts Productpage](screenshot-product2.png)
 
 CONTACT PAGE
-![Sweet Desserts Contactpage](sreenshot-contact.png)
+![Sweet Desserts Contactpage](screenshot-contact.png)
 ![Sweet Desserts Contactpage](screenshot-contacts2.png)
 
 ENQUIRY PAGE
