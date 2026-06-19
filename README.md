@@ -69,7 +69,7 @@ Sweet Desserts Website Sitemap
 ## screenshots of what to expect in each page (some not icluded)
 
 HOME PAGE
-![Sweet Desserts Homepage](screenshots/screenshot-home.png)
+![Sweet Desserts Homepage](screenshot-home.png)
 
 ABOUT PAGE
 ![Sweet Desserts Aboutpage](screenshot-about.png)
