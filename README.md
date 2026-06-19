@@ -24,6 +24,7 @@ Sweet Desserts is a bakery selling handmade cakes, muffins, cupcakes, ice cream,
 ## technologies used
 - HTML5 for content structure
 - CSS3 for styling and responsiveness
+- JavaScript for product filtering, cart total simulator, form validation, sticky offer banner.
 - printerest for images
 - google maps for location display
 
@@ -38,18 +39,18 @@ Sweet Desserts Website Sitemap
 │   ├── Visit Us (address, hours, phone, email)
 │   └── Customer testimonials
 │
-├── Products (products.html)
-│   ├── All desserts list (16+ items: cakes, muffins, cupcakes, ice cream, scones, cookies, candy)
-│   ├── Special offer reminder
-│   └── Link to Enquiry page for custom orders
-│
-├── About (about.html)
+├─ About (about.html)
 │   ├── Our Story (full version)
 │   ├── Meet the Baker (Carol Ratshilumela)
 │   ├── What We Believe In (values)
 │   ├── From Our Kitchen to Your Table (product categories)
 │   ├── Our Journey (timeline 2016–present)
 │   └── Sweet Special (offer details)
+│
+├── Products (products.html)
+│   ├── All desserts list (16+ items: cakes, muffins, cupcakes, ice cream, scones, cookies, candy)
+│   ├── Special offer reminder
+│   └── Link to Enquiry page for custom orders
 │
 ├── Contacts (contacts.html)
 │   ├── Visit Our Bakery (address, phone, email, hours)
@@ -64,6 +65,27 @@ Sweet Desserts Website Sitemap
     ├── Special Offer reminder
     └── Quick Answers (common questions)
 
+
+## screenshots of what to expect in each page (some not icluded)
+
+HOME PAGE
+![Sweet Desserts Homepage](screenshots/screenshot-home.png)
+
+ABOUT PAGE
+![Sweet Desserts Aboutpage](screenshots/Screenshot-about.png)
+
+PRODUCT PAGE
+![Sweet Desserts Productpage](screenshots/Screenshot-products.png)
+![Sweet Desserts Productpage](screenshots/Screenshot-product2.png)
+
+CONTACT PAGE
+![Sweet Desserts Contactpage](screenshots/Screenshot-contact.png)
+![Sweet Desserts Contactpage](screenshots/Screenshot-contacts2.png)
+
+ENQUIRY PAGE
+![Sweet Desserts Enquirypage](screenshots/Screenshot-enquiry.png)
+
+
 ## Changelog
 
 - Added full CSS styling (`style.css`) for all 5 pages 
@@ -75,15 +97,38 @@ Sweet Desserts Website Sitemap
 - Navigation bar background updated to improve contrast
 - Section cards now have subtle shadow and lift‑on‑hover effects
 - Improved readability on smaller screens
-- improve image optimisation and changed width and height of firts image on  products page
+- improve image optimisation and changed width and height of banner in products page
+
+- Added full JavaScript functionality (`script.js`) across all 5 pages
+- Product category filters on Products page
+- "Add to Cart" buttons with real‑time total calculator
+- Floating cart total (bottom‑right corner)
+- Automatic alert when total reaches R200+ (free candy/muffin reminder)
+- Form validation in real-time for Contacts and Enquiry pages (required fields, email format, inline error messages)
+- Sticky special offer banner on scroll
+
+- Added meta description and meta keywords in each html page
+- The `products.html` page now includes a lightbox-overlay `div` containers 
+- Added Automatic gallery lightbox – Click any product image to open a full‑screen overlay with navigation arrows and keyboard support.
+- Sections and cards now have subtle shadows and smoother transitions.
+- Product images now have a slight zoom effect on hover to hint at clickability (if lightbox is active).
+
 
 ## References
 
 * Barnard, L. and Wesson, J.L. 2003. Usability issues for E-commerce in South Africa: an empirical investigation. In Proceedings of the 2003 annual research conference of the South African Institute of Computer Scientists and Information Technologists. South Africa.
 * Els, D. 2015. Responsive Design High Performance. Birmingham: Packt Publishing Ltd. Available at: <https://play.google.com/store/books/details?id=yTInCAAAQBAJ> [Accessed 21 April 2026].
+
+* freeCodeCamp (2026) JavaScript algorithms and data structures certification. Available at: freecodecamp.org (Accessed: 19 June 2026)
+
 * Goldstuck, A. n.d. The Hitchhiker's Guide to the Internet: A South African Guide to the Online World. South Africa: Penguin Random House. Available at: <https://www.goodreads.com/book/show/7784011-the-hitchhiker-s-guide-to-the-internet> [Accessed 23 April 2026].
+
+* Kanton, I. (2026) An introduction to JavaScript. JavaScript.info. Available at: javascript.info (Accessed: 18 June 2026).
+
 * Kona, O.T. and Weideman, M. 2014. Website interface design: a study on the status quo of South African e-Commerce website interfaces. Working Paper, Cape Peninsula University of Technology, Cape Town. Available at: <http://hdl.handle.net/11189/8031> [Accessed 21 April 2026].
+
 * Toko, G. and Mnkandla, E. 2020. Computer Usability: Interactive Challenges Faced by Less Experienced Computer Users in South Africa. In Proceedings of the 12th International Conference on Computer Supported Education (CSEDU 2020), pp. 261-269. Available at: <https://www.scitepress.org/PublishedPapers/2020/93513/> [Accessed 21 April 2026].
+
 * W3Schools. 2026. W3Schools Online Web Tutorials. Available at: <https://w3schools.com> [Accessed 25 May 2026].
 
 
